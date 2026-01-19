@@ -13,7 +13,7 @@ class Person {
 // Employee Class (inherits from Person)
 class Employee extends Person {
   constructor(name, age, jobTitle) {
-    super(name, age); // call parent constructor
+    super(name, age);
     this.jobTitle = jobTitle;
   }
 
@@ -24,7 +24,8 @@ class Employee extends Person {
   }
 }
 
-// Expose classes for Cypress tests
+// For Cypress testing
 window.Person = Person;
 window.Employee = Employee;
+
 
