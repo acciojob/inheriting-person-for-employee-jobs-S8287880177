@@ -1,4 +1,3 @@
-// Person Class
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -10,7 +9,6 @@ class Person {
   }
 }
 
-// Employee Class (inherits from Person)
 class Employee extends Person {
   constructor(name, age, jobTitle) {
     super(name, age);
@@ -24,8 +22,5 @@ class Employee extends Person {
   }
 }
 
-// For Cypress testing
-window.Person = Person;
-window.Employee = Employee;
 
 
